@@ -1,0 +1,94 @@
+\documentclass{article}
+
+%caracteres en español ASCII extendido
+\usepackage[utf8]{inputenc}
+%caracteres en español ASCII extendido
+
+%introducir imágenes
+\usepackage{graphicx}
+%introducir imágenes
+
+%poner hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+\urlstyle{same}
+%poner hipervínculos
+
+%para poner las lineas de la portada
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+%para poner las lineas de la portada
+
+\begin{document}
+
+\begin{titlepage}
+
+\title{ \normalsize 
+		%\begin{figure}
+        \begin{center}
+        \includegraphics[height=6cm]{Logo.jpg}
+        \end{center}
+       % \end{figure}
+        \LARGE \textsc{\textbf{Universidad De Sonora}} \\ \bigskip
+		\Large División de Ciencias Exactas y Naturales \\
+        Licenciatura en Física \\ \bigskip
+        \bigskip
+       Física Computacional
+		\\ [0.1cm]  
+		\HRule{2pt} \\
+		\Large \textbf{{Reporte de Actividad 6}} \\
+        \textit{\textbf{"Pronóstico de Series de Tiempo"}}
+		\HRule{2pt} \\
+		\normalsize \vspace*{0.001\baselineskip}}
+        
+\date{\bigskip \Large Hermosillo, Sonora  \hspace*{\fill}  18 de Febrero de 2021}
+
+\author{
+		\Large\textbf{Paul Maximiliano Rivera Medina} \\ \bigskip
+        \\ \bigskip
+       \Large Profr. Carlos Lizárraga Celaya}
+       \end{titlepage}
+       \maketitle
+
+\newpage
+
+\section{\LARGE Introducción}
+El método de Euler y Runge Kutta Integrantes es un procedimiento de integración numérica que se utiliza para poder resolver ecuaciones diferenciales ordinarias a partir de un valor inicial dado, es decir, con el método de Euler se logra obtener una solución aproximada en un conjunto finito de puntos partiendo de la ecuación de la recta. $y’ = f(x, y)$, $y(x_0) = y_0$
+\large\textbf{}  
+
+ \section{\LARGE Bibliotecas}
+ La función odeint resuelve el problema del valor inicial para sistemas rígidos o no rígidos de ecuaciones diferenciales de primer orden.
+ solve\_ivp es una función que integra numéricamente un sistema de ecuaciones diferenciales ordinarias dado un valor inicial
+  \large\textbf{}
+  
+ \section{\LARGE Apéndice }
+ 
+ \begin{enumerate}
+     \item\large\textbf{¿Qué te pareció?}
+     \\Me encanto el hecho de ver un nuevo método de integración, aunque al verlo directo en ordenador no queda tan claro como hacerlo a mano, siendo tan complejo se agradece.
+ \\
+ \\
+    \item\large\textbf{¿Cómo estuvo estuvo la carga de trabajo?}
+    \\Diria que ha mantenido el nivel, por no decir igual que las pasadas.
+ \\
+ \\
+    \item\large\textbf{¿Qué se te dificultó más?} 
+    \\Los dos últimos problemas, puesto que estos no se resolvían con los métodos mencionados, nada que una pequeña investigación no solucione
+ \\
+ \\
+    \item\large\textbf{¿Qué te aburrió?}
+    \\El resolver las ecuaciones con una gráfica
+ \\
+ \\
+
+    \item\large\textbf{¿Que grado de complejidad le asignarías a esta Actividad?}
+    \\Avanzado, ya el buscar mas información significa un poco de complejidad 
+ \end{enumerate}
+
+\end{document}
+
